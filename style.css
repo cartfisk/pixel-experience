@@ -1,0 +1,13 @@
+.buttons {
+    z-index: 1
+}
+
+.video > video {
+    top: 50px;
+    position: absolute;
+    z-index: -1;
+}
+
+.video > video.primary {
+    z-index: 0;
+}
