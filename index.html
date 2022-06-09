@@ -11,33 +11,56 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <div class="video">
-            <video autoplay loop muted playsinline id="vocals">
-                <source src="assets/vocals.mp4" type="video/mp4">
+
+            <!-- VOCALS -->
+            <video loop playsinline id="vocals" class="primary">
+                <source src="assets/papa-vocals.mp4" type="video/mp4">
             </video>
-            <video autoplay loop muted playsinline id="guitar">
-                <source src="assets/guitar.mp4" type="video/mp4">
+            <video loop muted playsinline id="vocals-blank">
+                <source src="assets/papa-blank.mp4" type="video/mp4">
             </video>
-            <video autoplay loop muted playsinline id="bass">
-                <source src="assets/bass.mp4" type="video/mp4">
+
+            <!-- GUITAR -->
+            <video loop playsinline id="guitar" class="primary">
+                <source src="assets/papa-guitar.mp4" type="video/mp4">
             </video>
-            <video autoplay loop muted playsinline id="drums">
-                <source src="assets/drums.mp4" type="video/mp4">
+            <video loop muted playsinline id="guitar-blank">
+                <source src="assets/papa-blank.mp4" type="video/mp4">
             </video>
-            <video autoplay loop muted playsinline id="keys">
-                <source src="assets/keys.mp4" type="video/mp4">
+
+            <!-- DRUMS -->
+            <video loop playsinline id="drums" class="primary">
+                <source src="assets/papa-drums.mp4" type="video/mp4">
             </video>
+            <video loop muted playsinline id="drums-blank">
+                <source src="assets/papa-blank.mp4" type="video/mp4">
+            </video>
+
         </div>
         <div class="buttons">
-            <button type="button" id="vocals-btn">Vocals</button>
-            <button type="button" id="guitar-btn">Guitar</button>
-            <button type="button" id="bass-btn">Bass</button>
-            <button type="button" id="drums-btn">Drums</button>
-            <button type="button" id="keys-btn">Keys</button>
+            <button type="button" id="vocals-btn" class="active">Vocals</button>
+            <button type="button" id="guitar-btn" class="active">Guitar</button>
+            <button type="button" id="drums-btn" class="active">Drums</button>
         </div>
+        <div class="player">
+            <button type="button" id="play-btn">Play</button>
+        </div>
+        <script
+          src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous">      
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+        </script>
+        <script src="popcorn.js"></script>
+        <script src="script.js"></script>
+
         <script src="" async defer></script>
     </body>
 </html>
