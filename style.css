@@ -2,12 +2,87 @@
     z-index: 1
 }
 
-.video > video {
-    top: 50px;
+#vocals-btn{
+    background-color: white;
+}
+
+#vocals-btn.active{
+    background-color: yellow;
+}
+
+#guitar-btn{
+    background-color: white;
+}
+
+#guitar-btn.active{
+    background-color: green;
+}
+
+#drums-btn{
+    background-color: white;
+}
+
+#drums-btn.active{
+    background-color: red;
+}
+
+#play-btn{
+    background-color: white;
+}
+
+#play-btn.playing{
+    background-color: blue;
+}
+
+video{
+    width: 30%;
+    height: 200px;
+}
+
+.video > video#vocals {
+    top: 100px;
     position: absolute;
     z-index: -1;
 }
 
-.video > video.primary {
+.video > video#vocals.primary {
+    z-index: 1;
+}
+
+.video > video#vocals-blank {
+    top: 100px;
+    position: absolute;
+    z-index: 0;
+}
+
+.video > video#guitar {
+    top: 300px;
+    position: absolute;
+    z-index: -1;
+}
+
+.video > video#guitar.primary {
+    z-index: 1;
+}
+
+.video > video#guitar-blank {
+    top: 300px;
+    position: absolute;
+    z-index: 0;
+}
+
+.video > video#drums {
+    top: 500px;
+    position: absolute;
+    z-index: -1;
+}
+
+.video > video#drums.primary {
+    z-index: 1;
+}
+
+.video > video#drums-blank {
+    top: 500px;
+    position: absolute;
     z-index: 0;
 }
